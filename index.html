@@ -121,6 +121,22 @@ strong{color:var(--ink);font-weight:600}
 }
 .aside span{color:var(--muted)}
 
+figure{
+  margin:2.1em 0 2.3em;
+}
+figure img{
+  display:block;width:100%;height:auto;
+  border:1px solid var(--rule);border-radius:3px;
+}
+figcaption{
+  font-family:"Libre Franklin", Helvetica, Arial, sans-serif;
+  font-size:13.5px;line-height:1.62;color:var(--muted);
+  margin-top:11px;padding-left:14px;border-left:2px solid var(--accent);
+}
+figcaption b{color:var(--ink);font-weight:600}
+.wide{margin-left:calc((100% - min(94vw, 900px)) / 2 * -1);width:min(94vw,900px);max-width:none}
+@media(max-width:940px){.wide{margin-left:0;width:100%}}
+
 ol{
   margin:0 0 1.28em;
   padding-left:1.35em;
@@ -194,6 +210,11 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
   <p>You have twenty nine reviews on Google at a five star average. On the site there are none at all. The page headed Testimonials has no testimonials on it. It carries four press quotes, from Sold.com, Forbes, Realty Biz News and Home World Design, and a link that sends people off your site to read your reviews somewhere else.</p>
 
+  <figure class="wide">
+    <img src="img/ev-testimonials.jpg" alt="The Testimonials page on malihaus.com, showing four press quotes and no customer reviews" loading="lazy">
+    <figcaption><b>Your Testimonials page as it stands today.</b> Four quotes from Sold.com, Forbes, Realty Biz News and Home World Design, none of which are about MaliHaus, and a link at the top that sends the reader off your website to find your actual reviews.</figcaption>
+  </figure>
+
   <p>So the one page a nervous seller opens to find out whether you can be trusted asks them to leave in order to find out. Most of them will not come back.</p>
 
   <p>That is the cheapest thing on this list to fix and probably the most valuable. The reviews come onto the site and keep syncing, so new ones appear on their own, and the rating sits high enough on the page to be seen before anyone scrolls. The same piece of work puts your stars into Google's results as well.</p>
@@ -203,6 +224,11 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
   <p>Today a seller can call the number or fill in the form. Both put the effort on them and then make them wait.</p>
 
   <p>The form appears four times on the home page. Each time it asks for the full address, the street line, the city, the state, the ZIP, a name, an email and a phone number, and nearly all of it is required. The state field is a dropdown of all fifty states plus Guam, Puerto Rico, the US Virgin Islands, American Samoa, the Northern Mariana Islands and three Armed Forces regions. On a phone that is a sixty item scroll to answer a question you already know the answer to.</p>
+
+  <figure class="wide">
+    <img src="img/ev-form.jpg" alt="The malihaus.com home page form asking for eight fields, with a state dropdown" loading="lazy">
+    <figcaption><b>One screen, two problems.</b> Eight fields before a seller has been given anything, with a state dropdown on a Florida business. And two different phone numbers visible at the same time, (321) 461-2550 in the button at the top and (321) 655-2099 in the small print at the bottom.</figcaption>
+  </figure>
 
   <p>Every extra field costs you completions, and asking for all of them before the seller has any idea what they will get costs more. Ask for the address and nothing else, then bring the rest in once they are committed. When they do finish it, nothing comes back to them either. No range, no estimate, no sense of which of your routes might suit their situation, just a note that someone will be in touch.</p>
 
@@ -236,6 +262,11 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
   <p>The location story does not hold together either. The page title says Boca Raton, the headline says Florida, the body copy says Central Florida, the About page says Broward County, and the Google listing is a Boca Raton address with an Orlando area code. A seller in Boca reads Central Florida and wonders whether you are local. A seller in Orlando reads Boca Raton and wonders the same thing.</p>
 
+  <figure class="wide">
+    <img src="img/ev-counties.jpg" alt="The footer of malihaus.com listing ten Florida counties" loading="lazy">
+    <figcaption><b>Ten counties, one page.</b> Every link here resolves to a numbered copy of the same Boca Raton page. The Duval County link, which is Jacksonville, opens a page about Boca Raton.</figcaption>
+  </figure>
+
   <p>The footer lists ten counties: Miami Dade, Broward, Pinellas, Hillsborough, Orange, Seminole, Polk, Pasco, Duval and Palm Beach. Every one of those links goes to a numbered copy of the same Boca Raton page. So the page for Duval County, which is Jacksonville and three hundred miles away, is a Boca Raton page. Pages like that do not rank, and they can hold back the ones that would. Two genuine market pages are worth more than ten copies.</p>
 
   <p>Your Google listing is categorized as a real estate agency. If you also take listings then that is correct for that side of the business and it should stay. What is awkward is that the same profile is the front door for the cash purchase side, where the seller has usually arrived precisely because they do not want an agent. They go looking for a buyer and are shown an agency. That one is worth talking through before anything gets changed, because the right answer depends on how you intend the two halves of the business to sit next to each other. Either way there are secondary categories missing, the profile is incomplete, and it is where a steady flow of new reviews ought to start.</p>
@@ -263,7 +294,18 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
   <p style="margin-top:2.5em">None of this is a criticism of the business. Your reviews say the service is genuinely good, and the multiple routes are a real advantage that most of your competition does not have. The whole gap is between what is true about MaliHaus and what somebody standing on your website can see and do about it.</p>
 
-  <p>Happy to walk through any of this on a call. I can also show you what the home page would look like rebuilt, with your brand on it, before you commit to anything at all.</p>
+  <h2>What it could look like instead</h2>
+
+  <p>Rather than describe it, I built it. This is a working page, not a picture of one, using your own logo and your own rating. The conversation on it runs, and you can switch it between three different sellers to see how each one is handled.</p>
+
+  <figure class="wide">
+    <a href="https://andrewpcherry.github.io/malihaus-concept/">
+      <img src="img/ev-concept.jpg" alt="A proposed home page for MaliHaus Capital" loading="lazy">
+    </a>
+    <figcaption><b><a href="https://andrewpcherry.github.io/malihaus-concept/">Open the working page</a>.</b> Your rating in the first screen, one field to start instead of eight, your three routes as the leading idea, and the conversation that runs when you are not there. The photography and the example sellers are placeholders for your own.</figcaption>
+  </figure>
+
+  <p>Happy to walk through any of this on a call, and to go through the page with you properly.</p>
 
   <div class="signoff">
     <hr>
