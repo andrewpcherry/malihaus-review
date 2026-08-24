@@ -134,8 +134,10 @@ figcaption{
   margin-top:11px;padding-left:14px;border-left:2px solid var(--accent);
 }
 figcaption b{color:var(--ink);font-weight:600}
-.wide{margin-left:calc((100% - min(94vw, 900px)) / 2 * -1);width:min(94vw,900px);max-width:none}
-@media(max-width:940px){.wide{margin-left:0;width:100%}}
+.wide{
+  width:min(92vw,900px);max-width:none;
+  margin-left:50%;transform:translateX(-50%);
+}
 
 ol{
   margin:0 0 1.28em;
