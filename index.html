@@ -4,590 +4,277 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Website conversion review of malihaus.com, prepared for George Munoz at MaliHaus Capital by Andrew Cherry, RequityAI.">
+<title>Website Review for MaliHaus Capital</title>
+<meta name="description" content="A review of malihaus.com prepared for George Munoz by Andrew Cherry, RequityAI.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MaliHaus Capital: Website Conversion Review">
-<meta property="og:description" content="Seventeen findings on what malihaus.com is losing, and where to get it back. Prepared by Andrew Cherry, RequityAI.">
+<meta property="og:title" content="Website Review for MaliHaus Capital">
+<meta property="og:description" content="What malihaus.com is losing, and where I would get it back. Prepared by Andrew Cherry, RequityAI.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A0%3C/text%3E%3C/svg%3E">
-<title>MaliHaus Conversion Review</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 
 <style>
 :root{
-  --paper:#F6F5F0;
-  --paper-2:#FFFFFF;
-  --rule:#DCDACF;
-  --rule-soft:#E8E6DE;
-  --ink:#14180F;
-  --ink-2:#3D4237;
-  --ink-3:#6E7365;
-  --green:#2E6B34;
-  --green-bright:#4E9A3F;
-  --brass:#9A7434;
-  --rust:#A0402A;
-  --chip-crit-bg:#F4E3DE;
-  --chip-crit-fg:#8A3421;
-  --chip-high-bg:#F2EADA;
-  --chip-high-fg:#7E5D25;
-  --chip-mod-bg:#E4EDE2;
-  --chip-mod-fg:#2C5F31;
-  --shadow:0 1px 2px rgba(20,24,15,.05), 0 12px 28px -18px rgba(20,24,15,.28);
+  --paper:#FFFFFF;
+  --ink:#16191C;
+  --body:#2B3035;
+  --muted:#6C737A;
+  --rule:#E3E5E7;
+  --accent:#14603C;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#101309;
-    --paper-2:#171B12;
-    --rule:#2E3427;
-    --rule-soft:#232819;
-    --ink:#EDEDE4;
-    --ink-2:#C2C6B6;
-    --ink-3:#8B9182;
-    --green:#7FBE6C;
-    --green-bright:#93D07E;
-    --brass:#C8A05C;
-    --rust:#D97A5F;
-    --chip-crit-bg:#3A1F17;
-    --chip-crit-fg:#EC9E86;
-    --chip-high-bg:#332913;
-    --chip-high-fg:#DCB471;
-    --chip-mod-bg:#1D2E1C;
-    --chip-mod-fg:#96CE86;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 30px -20px rgba(0,0,0,.8);
+    --paper:#0F1214;
+    --ink:#E8EBEC;
+    --body:#C3C9CD;
+    --muted:#868D93;
+    --rule:#262B2E;
+    --accent:#5CB98A;
   }
 }
 :root[data-theme="dark"]{
-  --paper:#101309;
-  --paper-2:#171B12;
-  --rule:#2E3427;
-  --rule-soft:#232819;
-  --ink:#EDEDE4;
-  --ink-2:#C2C6B6;
-  --ink-3:#8B9182;
-  --green:#7FBE6C;
-  --green-bright:#93D07E;
-  --brass:#C8A05C;
-  --rust:#D97A5F;
-  --chip-crit-bg:#3A1F17;
-  --chip-crit-fg:#EC9E86;
-  --chip-high-bg:#332913;
-  --chip-high-fg:#DCB471;
-  --chip-mod-bg:#1D2E1C;
-  --chip-mod-fg:#96CE86;
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 30px -20px rgba(0,0,0,.8);
+  --paper:#0F1214;
+  --ink:#E8EBEC;
+  --body:#C3C9CD;
+  --muted:#868D93;
+  --rule:#262B2E;
+  --accent:#5CB98A;
 }
 
 *{box-sizing:border-box}
+
 body{
   margin:0;
   background:var(--paper);
-  color:var(--ink);
-  font-family:"IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  font-size:16.5px;
-  line-height:1.62;
+  color:var(--body);
+  font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size:19px;
+  line-height:1.72;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:980px;margin:0 auto;padding:0 28px 96px}
 
-/* ---------- masthead ---------- */
-.masthead{
-  border-bottom:2px solid var(--ink);
-  padding:56px 0 22px;
-  margin-bottom:0;
+.sheet{
+  max-width:672px;
+  margin:0 auto;
+  padding:0 30px 120px;
 }
-.eyebrow{
-  font-family:"IBM Plex Mono", ui-monospace, monospace;
-  font-size:11.5px;
-  letter-spacing:.16em;
+
+/* letterhead */
+.head{padding:74px 0 0}
+.firm{
+  font-family:"Libre Franklin", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.19em;
   text-transform:uppercase;
-  color:var(--ink-3);
+  color:var(--accent);
 }
-.masthead h1{
-  font-family:"Newsreader", Georgia, "Times New Roman", serif;
-  font-weight:500;
-  font-size:clamp(2.3rem, 5.4vw, 3.5rem);
-  line-height:1.06;
-  letter-spacing:-.015em;
-  margin:.32em 0 .34em;
+.head hr{
+  border:0;
+  border-top:1.5px solid var(--accent);
+  margin:14px 0 30px;
+}
+.subject{
+  font-family:"Libre Franklin", Helvetica, Arial, sans-serif;
+  font-weight:600;
+  font-size:1.42rem;
+  line-height:1.3;
+  letter-spacing:-.011em;
+  color:var(--ink);
+  margin:0 0 10px;
   text-wrap:balance;
 }
-.masthead h1 em{font-style:italic;color:var(--green)}
-.meta{
-  display:flex;flex-wrap:wrap;gap:8px 30px;
-  font-family:"IBM Plex Mono", ui-monospace, monospace;
-  font-size:12px;color:var(--ink-3);
-  letter-spacing:.02em;
-  padding-top:6px;
+.who{
+  font-family:"Libre Franklin", Helvetica, Arial, sans-serif;
+  font-size:13.5px;
+  line-height:1.75;
+  color:var(--muted);
+  margin:0 0 52px;
 }
-.meta b{color:var(--ink-2);font-weight:500}
+.salute{
+  color:var(--ink);
+  margin:0 0 1.2em;
+}
 
-/* ---------- lede ---------- */
-.lede{
-  padding:34px 0 8px;
-  max-width:66ch;
+/* body copy */
+p{margin:0 0 1.28em}
+h2{
+  font-family:"Libre Franklin", Helvetica, Arial, sans-serif;
+  font-weight:600;
+  font-size:1.02rem;
+  letter-spacing:-.004em;
+  color:var(--ink);
+  margin:2.5em 0 .9em;
+  line-height:1.42;
 }
-.lede p{
-  font-family:"Newsreader", Georgia, serif;
-  font-size:1.24rem;
-  line-height:1.55;
-  color:var(--ink-2);
-  margin:0 0 1.05em;
-}
-.lede p:first-child{color:var(--ink)}
+strong{color:var(--ink);font-weight:600}
 
-/* ---------- tally ---------- */
-.tally{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
-  gap:1px;
-  background:var(--rule);
-  border:1px solid var(--rule);
-  border-radius:3px;
-  overflow:hidden;
-  margin:32px 0 8px;
+.aside{
+  border-left:2px solid var(--accent);
+  padding:2px 0 2px 20px;
+  margin:0 0 1.28em;
+  font-family:"Libre Franklin", Helvetica, Arial, sans-serif;
+  font-size:15.5px;
+  line-height:1.85;
+  color:var(--ink);
 }
-.tally div{background:var(--paper-2);padding:18px 20px}
-.tally .n{
-  font-family:"Newsreader", Georgia, serif;
-  font-size:2.15rem;line-height:1;font-weight:500;
-  font-variant-numeric:tabular-nums;
-  display:block;margin-bottom:6px;
+.aside span{color:var(--muted)}
+
+ol{
+  margin:0 0 1.28em;
+  padding-left:1.35em;
 }
-.tally .n.crit{color:var(--rust)}
-.tally .n.good{color:var(--green)}
-.tally .l{
-  font-family:"IBM Plex Mono", monospace;
-  font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);
+ol li{margin-bottom:1.05em;padding-left:.25em}
+ol li:last-child{margin-bottom:0}
+
+/* sign off */
+.signoff{margin-top:3.4em}
+.signoff hr{
+  border:0;
+  border-top:1px solid var(--rule);
+  margin:0 0 30px;
+  width:64px;
+}
+.name{
+  font-family:"Libre Franklin", Helvetica, Arial, sans-serif;
+  font-weight:600;
+  color:var(--ink);
+  font-size:15.5px;
+  line-height:1.6;
+}
+.name span{
   display:block;
+  font-weight:400;
+  color:var(--muted);
+  font-size:13.5px;
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover,a:focus-visible{border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+@media (max-width:600px){
+  body{font-size:18px;line-height:1.68}
+  .sheet{padding:0 22px 90px}
+  .head{padding-top:52px}
+  .subject{font-size:1.28rem}
+  .who{margin-bottom:40px}
 }
 
-/* ---------- sections ---------- */
-section{margin-top:64px}
-.sec-head{
-  display:flex;align-items:baseline;gap:16px;
-  border-bottom:1px solid var(--ink);
-  padding-bottom:10px;margin-bottom:6px;
-}
-.sec-head .k{
-  font-family:"IBM Plex Mono", monospace;
-  font-size:11px;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--brass);white-space:nowrap;
-}
-.sec-head h2{
-  font-family:"Newsreader", Georgia, serif;
-  font-weight:500;font-size:1.72rem;letter-spacing:-.01em;
-  margin:0;line-height:1.2;
-}
-.sec-sub{
-  font-size:.95rem;color:var(--ink-3);margin:12px 0 0;max-width:62ch;
-}
-
-/* ---------- findings ---------- */
-.finding{
-  display:grid;
-  grid-template-columns:112px 1fr;
-  gap:0 28px;
-  padding:26px 0;
-  border-bottom:1px solid var(--rule-soft);
-  align-items:start;
-}
-.finding:last-child{border-bottom:none}
-.rail{position:sticky;top:20px}
-.fnum{
-  font-family:"IBM Plex Mono", monospace;
-  font-size:12px;font-weight:600;letter-spacing:.08em;
-  color:var(--ink-3);display:block;margin-bottom:10px;
-  font-variant-numeric:tabular-nums;
-}
-.chip{
-  display:inline-block;
-  font-family:"IBM Plex Mono", monospace;
-  font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
-  padding:4px 8px;border-radius:2px;font-weight:600;
-}
-.chip.crit{background:var(--chip-crit-bg);color:var(--chip-crit-fg)}
-.chip.high{background:var(--chip-high-bg);color:var(--chip-high-fg)}
-.chip.mod{background:var(--chip-mod-bg);color:var(--chip-mod-fg)}
-.finding h3{
-  font-family:"Newsreader", Georgia, serif;
-  font-weight:500;font-size:1.3rem;line-height:1.28;
-  margin:0 0 .5em;letter-spacing:-.005em;text-wrap:balance;
-}
-.finding p{margin:0 0 .85em;color:var(--ink-2);max-width:62ch}
-.finding p:last-child{margin-bottom:0}
-.fix{
-  border-left:2px solid var(--green);
-  padding:2px 0 2px 15px;
-  margin-top:14px;
-}
-.fix span{
-  font-family:"IBM Plex Mono", monospace;
-  font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);
-  display:block;margin-bottom:5px;
-}
-.fix p{color:var(--ink);margin:0}
-.obs{
-  font-family:"IBM Plex Mono", monospace;
-  font-size:12.5px;line-height:1.75;
-  background:var(--paper-2);
-  border:1px solid var(--rule-soft);
-  border-radius:3px;
-  padding:13px 16px;margin:0 0 .95em;
-  color:var(--ink-2);
-  overflow-x:auto;
-}
-.obs b{color:var(--ink);font-weight:600}
-
-/* ---------- priority ---------- */
-.priority{
-  background:var(--paper-2);
-  border:1px solid var(--rule);
-  border-radius:4px;
-  padding:34px 34px 30px;
-  margin-top:26px;
-  box-shadow:var(--shadow);
-}
-.priority ol{margin:0;padding:0;list-style:none;counter-reset:p}
-.priority li{
-  counter-increment:p;
-  display:grid;grid-template-columns:38px 1fr;gap:0 18px;
-  padding:17px 0;border-bottom:1px solid var(--rule-soft);
-}
-.priority li:last-child{border-bottom:none;padding-bottom:0}
-.priority li::before{
-  content:counter(p);
-  font-family:"Newsreader", Georgia, serif;
-  font-size:1.6rem;color:var(--brass);line-height:1;
-  font-variant-numeric:tabular-nums;
-}
-.priority h4{
-  font-family:"IBM Plex Sans", sans-serif;
-  font-weight:600;font-size:1rem;margin:0 0 .3em;
-}
-.priority p{margin:0;color:var(--ink-2);font-size:.95rem;max-width:60ch}
-
-/* ---------- closing ---------- */
-.closing{
-  margin-top:64px;padding-top:26px;
-  border-top:2px solid var(--ink);
-}
-.closing p{max-width:64ch;color:var(--ink-2)}
-.closing p.first{
-  font-family:"Newsreader", Georgia, serif;
-  font-size:1.2rem;color:var(--ink);line-height:1.55;
-}
-.sig{
-  font-family:"IBM Plex Mono", monospace;
-  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--ink-3);margin-top:30px;
-}
-.sig b{display:block;color:var(--ink);letter-spacing:.06em;margin-bottom:3px;font-weight:600}
-
-.note{
-  font-size:.86rem;color:var(--ink-3);margin-top:38px;
-  border-top:1px solid var(--rule-soft);padding-top:16px;max-width:66ch;
-}
-
-@media (max-width:680px){
-  body{font-size:16px}
-  .wrap{padding:0 20px 72px}
-  .finding{grid-template-columns:1fr;gap:0}
-  .rail{position:static;display:flex;align-items:center;gap:12px;margin-bottom:12px}
-  .fnum{margin-bottom:0}
-  .priority{padding:24px 22px}
-}
-@media (prefers-reduced-motion:no-preference){
-  .finding, .tally div{transition:background .2s ease}
+@media print{
+  body{background:#fff;color:#111;font-size:11.5pt}
+  .sheet{max-width:none;padding:0}
+  h2{margin-top:20pt}
+  a{border:0;color:#111}
 }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="masthead">
-    <div class="eyebrow">Website conversion review</div>
-    <h1>What malihaus.com is <em>losing</em>, and where to get it back</h1>
-    <div class="meta">
-      <span><b>Prepared for</b> George Munoz, MaliHaus Capital</span>
-      <span><b>Prepared by</b> Andrew Cherry, RequityAI</span>
-      <span><b>Date</b> 24 August 2026</span>
-    </div>
-  </header>
+<div class="sheet">
 
-  <div class="lede">
-    <p>George, following our conversation on 21 August, I went through malihaus.com the way a seller would, then went through it again the way a search engine does. The offer itself is good. Cash, as is, no fees, no commission, and a genuine point of difference in that you can route a house through several outlets instead of one. None of that is the problem.</p>
-    <p>The problem is that almost none of it reaches the person on the page, and what does reach them has no way to turn into a conversation unless they fill in a seven field form and then wait. Seventeen findings follow, grouped by where in the seller's journey they bite. Each one has what I would do about it.</p>
+  <div class="head">
+    <div class="firm">RequityAI</div>
+    <hr>
+    <h1 class="subject">A look at malihaus.com, and what I would change first</h1>
+    <p class="who">
+      For George Munoz, MaliHaus Capital<br>
+      From Andrew Cherry<br>
+      24 August 2026
+    </p>
   </div>
 
-  <div class="tally">
-    <div><span class="n">17</span><span class="l">Findings</span></div>
-    <div><span class="n crit">6</span><span class="l">Critical</span></div>
-    <div><span class="n">6</span><span class="l">High</span></div>
-    <div><span class="n good">5.0</span><span class="l">Your Google rating</span></div>
+  <p class="salute">George,</p>
+
+  <p>After our call on 21 August I spent proper time on malihaus.com. First the way one of your sellers would, then looking at what Google and the AI assistants can actually see of you. Everything below is what I found, in the order I would deal with it.</p>
+
+  <p>The offer is not the problem. Cash, as is, no fees, no commission, and the ability to run a house through more than one outlet rather than just making an offer on it. That last part is genuinely unusual. The problem is how little of it reaches the person on the page, and that once they are there, there is only one way in and it is a long one.</p>
+
+  <h2>Your reviews are not on your website</h2>
+
+  <p>You have twenty nine reviews on Google at a five star average. On the site there are none at all. The page headed Testimonials has no testimonials on it. It carries four press quotes, from Sold.com, Forbes, Realty Biz News and Home World Design, and a link that sends people off your site to read your reviews somewhere else.</p>
+
+  <p>So the one page a nervous seller opens to find out whether you can be trusted asks them to leave in order to find out. Most of them will not come back.</p>
+
+  <p>That is the cheapest thing on this list to fix and probably the most valuable. The reviews come onto the site and keep syncing, so new ones appear on their own, and the rating sits high enough on the page to be seen before anyone scrolls. The same piece of work puts your stars into Google's results as well.</p>
+
+  <h2>There is only one way in, and it asks for a lot</h2>
+
+  <p>Today a seller can call the number or fill in the form. Both put the effort on them and then make them wait.</p>
+
+  <p>The form appears four times on the home page. Each time it asks for the full address, the street line, the city, the state, the ZIP, a name, an email and a phone number, and nearly all of it is required. The state field is a dropdown of all fifty states plus Guam, Puerto Rico, the US Virgin Islands, American Samoa, the Northern Mariana Islands and three Armed Forces regions. On a phone that is a sixty item scroll to answer a question you already know the answer to.</p>
+
+  <p>Every extra field costs you completions, and asking for all of them before the seller has any idea what they will get costs more. Ask for the address and nothing else, then bring the rest in once they are committed. When they do finish it, nothing comes back to them either. No range, no estimate, no sense of which of your routes might suit their situation, just a note that someone will be in touch.</p>
+
+  <p>There is also no way to book a time, which leaves all the chasing with you. And there is nothing at all for the seller who does not want to fill in a form. No chat, no instant reply, no path outside office hours. Someone reading your page at nine in the evening about a house they have inherited has no way to ask a single question. They close the tab and open the next buyer's.</p>
+
+  <p>That gap is the one I would close first after the reviews. Something on the site that answers straight away, day or night, that can take the address and the situation and hand you a lead that is already warm. The same thing extends to the phone, so a call you miss comes back as a text within seconds instead of sitting in a voicemail box. And a calendar a seller can book into directly, with reminders, so they actually turn up.</p>
+
+  <p>One small thing in the same area. On a phone there is nowhere persistent to tap. The number sits in the header, and the page runs to about five and a half thousand pixels, so it is gone the moment anyone scrolls.</p>
+
+  <h2>Nothing on the page proves any of it</h2>
+
+  <p>Someone handing a house to a company they found online is making a large and frightening decision. Your About page says family owned, more than ten years, hundreds of homeowners helped. Those are exactly the claims that need something standing next to them.</p>
+
+  <p>There are eleven images on the home page and six of them are stock line icons. There are no photographs of houses you have bought, no before and after, no closing figures, no map of where you have worked, and no picture of you or anyone on the team. Nobody is named anywhere on it.</p>
+
+  <p>The bigger loss is that the one thing that is actually yours is buried. Most cash buyers make an offer and that is the whole conversation. You can put a house through your own capital, through local renovators, or through national auction and buyer platforms, which means you can create competition for a property instead of simply pricing it. On the site that appears once, in the middle, in a short paragraph under a row of stock icons that say the same generic things every other buyer says. It should be the leading idea on the page. It is the only claim you make that a seller cannot get from the buyer down the road.</p>
+
+  <p>Part of why the page cannot carry any of that is that it is not really your page. The layout, the icon set and the section structure come from a template that a large number of other investor sites also run, and it decides what can and cannot go on it. A seller comparing three buyers in one evening ends up looking at three versions of the same page, and at that point price is the only visible difference between you.</p>
+
+  <h2>Google and the AI assistants are getting mixed signals</h2>
+
+  <p>There are three different phone numbers for your business in public right now.</p>
+
+  <div class="aside">
+    (321) 461-2550 <span>on the website and every call button</span><br>
+    (321) 655-2099 <span>in the small print under every form</span><br>
+    (407) 917-3347 <span>on your Google listing</span>
   </div>
 
-  <!-- ================= SECTION A ================= -->
-  <section>
-    <div class="sec-head">
-      <span class="k">Part one</span>
-      <h2>What happens when a seller lands</h2>
-    </div>
-    <p class="sec-sub">Distressed and motivated sellers do not shop for weeks. They contact two or three buyers in an evening and go with whoever responds first and feels safest. Everything in this section is about that window.</p>
+  <p>Consistency across your listings is one of the things local ranking is built on. It also means you cannot tell which number produced which lead, and a seller who sees one number on Google and a different one on the site has a small reason to pause.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">01</span><span class="chip crit">Critical</span></div>
-      <div>
-        <h3>You have 29 five star reviews and not one of them appears on your website</h3>
-        <p>Your Google Business Profile carries a 5.0 average across 29 reviews. That is a genuinely strong record and it is the single most persuasive asset you own. On the website it is invisible. The page headed Testimonials contains no testimonials at all. It carries four press quotes from Sold.com, Forbes, Realty Biz News and Home World Design, and a link that sends the visitor off your site to read reviews somewhere else.</p>
-        <p>Every visitor you send that page is being asked to leave in order to find out whether you are trustworthy. Most will not come back.</p>
-        <div class="fix"><span>What to do</span><p>Pull the live Google reviews onto the site and keep them syncing, so new ones appear on their own. Put a rating band in the header where it is visible before any scrolling, three named reviews next to the form, and the full set on the Testimonials page. Add the review markup so the stars can also show in Google results.</p></div>
-      </div>
-    </div>
+  <p>The location story does not hold together either. The page title says Boca Raton, the headline says Florida, the body copy says Central Florida, the About page says Broward County, and the Google listing is a Boca Raton address with an Orlando area code. A seller in Boca reads Central Florida and wonders whether you are local. A seller in Orlando reads Boca Raton and wonders the same thing.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">02</span><span class="chip crit">Critical</span></div>
-      <div>
-        <h3>Nothing on the site responds to a seller who does not fill in the form</h3>
-        <p>There is no chat, no instant reply, no callback option, and no path at all outside business hours. The site has exactly two doors, a phone number and a long form, and both of them require the seller to make the effort and then wait for a human.</p>
-        <p>A seller reading your page at 9pm about a house they inherited has no way to ask one question. They close the tab.</p>
-        <div class="fix"><span>What to do</span><p>Add a conversation layer that answers immediately, day or night, and can qualify the property, answer the common questions and hand a warm lead to you. Extend it to the phone as well, so that a call you miss is answered by text within seconds rather than sitting as a voicemail. This runs on the site, on text, and on your Google listing.</p></div>
-      </div>
-    </div>
+  <p>The footer lists ten counties: Miami Dade, Broward, Pinellas, Hillsborough, Orange, Seminole, Polk, Pasco, Duval and Palm Beach. Every one of those links goes to a numbered copy of the same Boca Raton page. So the page for Duval County, which is Jacksonville and three hundred miles away, is a Boca Raton page. Pages like that do not rank, and they can hold back the ones that would. Two genuine market pages are worth more than ten copies.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">03</span><span class="chip high">High</span></div>
-      <div>
-        <h3>There is no way for a seller to book a time</h3>
-        <p>The stated process is call us or fill in the form and our team will contact you. That leaves the seller with no control and no certainty, and it puts the burden of chasing on your side.</p>
-        <div class="fix"><span>What to do</span><p>Let a seller pick a slot on your calendar directly from the page, with a confirmation and reminders by text so they turn up. Booked time on a calendar converts at a different rate to a form entry, because the seller has already committed.</p></div>
-      </div>
-    </div>
+  <p>Your Google listing is categorized as a real estate agency. If you also take listings then that is correct for that side of the business and it should stay. What is awkward is that the same profile is the front door for the cash purchase side, where the seller has usually arrived precisely because they do not want an agent. They go looking for a buyer and are shown an agency. That one is worth talking through before anything gets changed, because the right answer depends on how you intend the two halves of the business to sit next to each other. Either way there are secondary categories missing, the profile is incomplete, and it is where a steady flow of new reviews ought to start.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">04</span><span class="chip crit">Critical</span></div>
-      <div>
-        <h3>The form asks for a great deal before it gives anything</h3>
-        <p>The home page carries the same form four times. Each one asks for full address, street line, city, state, ZIP, full name, email and phone, with almost all of it required.</p>
-        <div class="obs"><b>The state field is a dropdown of all fifty states plus Guam, Puerto Rico, the US Virgin Islands, American Samoa, the Northern Mariana Islands and three Armed Forces regions.</b> For a Florida buyer, on a phone, that is a sixty item scroll to answer a question you already know the answer to.</div>
-        <p>Every extra required field costs completions. Asking for all of them before the seller has any sense of what they will get costs more.</p>
-        <div class="fix"><span>What to do</span><p>Ask for the address first and nothing else, then reveal the rest in short steps once the seller is committed. Default the state to Florida. Cut the required fields on the first step to one.</p></div>
-      </div>
-    </div>
+  <p>Separately, buyershaus.com currently carries exactly the same page title as malihaus.com. Different audience, different offer, wearing the seller site's title. It needs its own.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">05</span><span class="chip high">High</span></div>
-      <div>
-        <h3>The seller gets nothing back for their address</h3>
-        <p>They hand over the property and their contact details and receive a confirmation that someone will be in touch. There is no range, no estimate, no comparison, no indication of which of your several exit routes might suit them.</p>
-        <div class="fix"><span>What to do</span><p>Return something immediately. Even a preliminary range with a clear explanation that a firm number follows a short conversation is enough to justify the form. It also makes the follow up call a continuation rather than a cold start.</p></div>
-      </div>
-    </div>
+  <p>Then there is AI search, which is where a growing share of sellers now begin. When someone asks an assistant how to sell an inherited house in Florida without doing repairs, the answer is assembled from pages that address that exact situation in plain language and are marked up so a machine can read the question and the answer together. You have nothing like that. No page on probate, on inherited property, on being behind on payments, on divorce, on relocation, on a rental someone is tired of, on a house that will not pass inspection. That work compounds, and it keeps running after a budget stops.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">06</span><span class="chip mod">Moderate</span></div>
-      <div>
-        <h3>On a phone there is no persistent way to call you</h3>
-        <p>The number sits in the header. Once the seller scrolls, it is gone, and the page is roughly five and a half thousand pixels tall.</p>
-        <div class="fix"><span>What to do</span><p>Fix a call bar and a text option to the bottom of the screen on mobile so both are always one tap away, and track which one gets used.</p></div>
-      </div>
-    </div>
-  </section>
+  <h2>None of it is measured</h2>
 
-  <!-- ================= SECTION B ================= -->
-  <section>
-    <div class="sec-head">
-      <span class="k">Part two</span>
-      <h2>Whether the seller believes you</h2>
-    </div>
-    <p class="sec-sub">A seller handing over a house to a company they found online is making a large and frightening decision. The page has to answer who you are, what you have done, and why you rather than the other three.</p>
+  <p>This is the short one, and it is the one that limits everything else. I went through what the site serves and every request it makes. There is no Google Analytics, no tag manager, no advertising pixel of any kind and no call tracking. The only thing recording anything is your website provider's own page counter.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">07</span><span class="chip crit">Critical</span></div>
-      <div>
-        <h3>There is no evidence on the site that you have ever bought a house</h3>
-        <p>The home page carries eleven images. Six of them are generic line icons served from a stock library. There are no property photographs, no before and after, no closing statements, no number of homes bought, no dollar figures, no map of what you have done, and no photograph of you or anyone on your team.</p>
-        <p>The About page says the company is family owned, has been in business more than ten years and has helped hundreds of homeowners. Those are exactly the claims that need proof next to them, and none is offered.</p>
-        <div class="fix"><span>What to do</span><p>Put real work on the page. Photographs of houses you have bought, the situation each seller was in, how long it took to close. A named owner with a photograph and a short account of why you do this. That combination, next to the Google reviews, is what separates you from the next tab.</p></div>
-      </div>
-    </div>
+  <p>Which means that today you cannot tell how many people visit, where they came from, how many reach a form, how many abandon it halfway, which page produced a lead, or what any lead cost you. If you spend money on traffic tomorrow, none of it can be attributed to anything.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">08</span><span class="chip high">High</span></div>
-      <div>
-        <h3>The strongest thing you have is buried in a paragraph</h3>
-        <p>Most cash buyers make one offer and that is the whole conversation. You can route a house through your own capital, through local renovators, or through national auction and buyer platforms, which means you can create competition for a property rather than simply pricing it. That is a real advantage and most of your competitors cannot claim it.</p>
-        <p>On the page it appears once, in the middle, in a short paragraph headed Our Advantage, underneath a row of stock icons that say the same generic things every other buyer says.</p>
-        <div class="fix"><span>What to do</span><p>Make it the headline idea, not a footnote. Show the routes side by side with what each one means for the seller in money and in time. It is the only claim on the site that a seller cannot get from the buyer down the road.</p></div>
-      </div>
-    </div>
+  <p>The page is also slower than it needs to be, because it hands its editing and media management code to ordinary visitors, roughly a hundred scripts including the whole page builder. None of it does anything for a seller and all of it has to download first. That matters most on exactly the traffic you want, which is somebody on a phone, on mobile data, in a hurry.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">09</span><span class="chip mod">Moderate</span></div>
-      <div>
-        <h3>The site is recognizably the same template other buyers use</h3>
-        <p>The layout, the icon set and the section structure come from a shared template that a large number of other investor websites also run. A seller comparing three buyers in one evening will see three versions of the same page, which makes price the only visible difference between you.</p>
-        <div class="fix"><span>What to do</span><p>Rebuild the home page around your own brand, your own photographs, your reviews and your multiple exit routes. This is the piece that also makes every other fix in this document possible, because the current template controls what can and cannot be put on the page.</p></div>
-      </div>
-    </div>
-  </section>
+  <h2>Where I would start</h2>
 
-  <!-- ================= SECTION C ================= -->
-  <section>
-    <div class="sec-head">
-      <span class="k">Part three</span>
-      <h2>What Google and AI search can see</h2>
-    </div>
-    <p class="sec-sub">More sellers now start with a question typed into an AI assistant than with a search results page. Both routes read the same signals, and several of yours currently contradict each other.</p>
+  <ol>
+    <li><strong>Measurement, before anything else changes.</strong> Analytics, conversion tracking on every form and call, and tracking behind the phone number, so that everything after it can be judged against a real baseline instead of an opinion. This is days of work, not weeks.</li>
+    <li><strong>Your reviews on the site, and something that answers instantly.</strong> The five star rating goes where people see it, and the site, your text messages and your missed calls all start responding within seconds. Between them these two address the largest share of what is currently being lost.</li>
+    <li><strong>Rebuild the home page.</strong> Your brand, your photographs, your reviews, your multiple routes as the leading idea, a short form that begins with the address alone, and booking straight into your calendar. This is also what unlocks the things the current template will not allow.</li>
+    <li><strong>Straighten out Google, then build the situation pages.</strong> One number everywhere, a complete profile, the missing categories and a steady flow of new reviews, once we have settled the question about the two sides of the business. Then the situation pages, which are what get you quoted in AI answers.</li>
+  </ol>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">10</span><span class="chip crit">Critical</span></div>
-      <div>
-        <h3>Three different phone numbers are in public for one business</h3>
-        <div class="obs">
-          <b>(321) 461-2550</b> is on the website header and every call button<br>
-          <b>(321) 655-2099</b> is in the consent text under every form on the site<br>
-          <b>(407) 917-3347</b> is on your Google Business Profile
-        </div>
-        <p>Consistency of name, address and phone number across your listings is one of the things local ranking is built on, and yours does not match. It also means you cannot tell which number produced which lead, and a seller who sees a different number on Google to the one on the website has a small reason to hesitate.</p>
-        <div class="fix"><span>What to do</span><p>Settle on one primary number, correct it everywhere it appears, and put tracking behind it so calls from the website, from Google and from ads are separated in the reporting.</p></div>
-      </div>
-    </div>
+  <p style="margin-top:2.5em">None of this is a criticism of the business. Your reviews say the service is genuinely good, and the multiple routes are a real advantage that most of your competition does not have. The whole gap is between what is true about MaliHaus and what somebody standing on your website can see and do about it.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">11</span><span class="chip high">High</span></div>
-      <div>
-        <h3>The location story does not hold together</h3>
-        <div class="obs">
-          The page title and search description say <b>Boca Raton</b><br>
-          The headline says <b>Florida Sellers</b><br>
-          The body copy says <b>Central Florida</b> renovators and Central Florida buyers<br>
-          The About page says you buy in <b>Broward County</b><br>
-          Your Google listing is a <b>Boca Raton</b> address with an <b>Orlando</b> area code
-        </div>
-        <p>A seller in Boca Raton reads Central Florida and wonders whether you are local. A seller in Orlando reads Boca Raton and wonders the same. Search engines resolve the ambiguity by trusting none of it strongly.</p>
-        <div class="fix"><span>What to do</span><p>Pick the primary market and lead with it everywhere, then let the other counties live on their own genuinely distinct pages rather than in the headline.</p></div>
-      </div>
-    </div>
+  <p>Happy to walk through any of this on a call. I can also show you what the home page would look like rebuilt, with your brand on it, before you commit to anything at all.</p>
 
-    <div class="finding">
-      <div class="rail"><span class="fnum">12</span><span class="chip high">High</span></div>
-      <div>
-        <h3>The ten county links all point at the same Boca Raton page</h3>
-        <p>The footer lists Miami Dade, Broward, Pinellas, Hillsborough, Orange, Seminole, Polk, Pasco, Duval and Palm Beach. Every one of those links resolves to a numbered variant of the Boca Raton page.</p>
-        <p>So a page labeled Duval County, which is Jacksonville, roughly three hundred miles from Boca Raton, is a copy of a Boca Raton page. Duplicated pages of this kind do not rank, and they can hold back the pages that would.</p>
-        <div class="fix"><span>What to do</span><p>Either build genuinely distinct pages for the markets you actually work, with local content and local proof on each, or reduce the list to the markets you serve properly. Ten thin copies are worth less than two real ones.</p></div>
-      </div>
-    </div>
-
-    <div class="finding">
-      <div class="rail"><span class="fnum">13</span><span class="chip high">High</span></div>
-      <div>
-        <h3>One Google profile is being asked to serve two opposite sellers</h3>
-        <p>Your Business Profile category is Real estate agency. If you also take listings, that category is correct for the listing side of the business and should stay. The difficulty is that the same profile is the front door for the cash purchase side, where the seller has usually come looking specifically to avoid an agent. They search for a buyer and are shown an agency.</p>
-        <p>The same split runs through the rest of it. One website sells a cash purchase, a second site sells investor deals under the seller site's title, and one Google listing sits behind both.</p>
-        <div class="fix"><span>What to do</span><p>This is a decision to make before anything is changed, not a setting to flip. Once we know which side this profile is meant to represent, and whether the listing side is going to advertise in its own right, the category, the description and the services follow from that. Whichever way it goes, three things are worth doing now: add the secondary categories you are currently missing, complete the profile properly with services, hours, description, photographs and answered questions, and start the review flow from it.</p></div>
-      </div>
-    </div>
-
-    <div class="finding">
-      <div class="rail"><span class="fnum">14</span><span class="chip mod">Moderate</span></div>
-      <div>
-        <h3>There is nothing on the site for an AI assistant to quote</h3>
-        <p>When someone asks an assistant how to sell an inherited house in Florida without repairs, it answers from pages that address that specific situation in plain language and mark it up so it can be read as a question and an answer. Your site has no such markup, and no pages built around the situations sellers actually arrive in: probate, inherited, behind on payments, divorce, relocation, a tired rental, a house that will not pass inspection.</p>
-        <div class="fix"><span>What to do</span><p>Build a small set of situation pages, each written for one circumstance and each ending in the same booking step, plus proper question and answer markup. This is the work that makes you visible in AI answers, and it compounds rather than stopping when a budget stops.</p></div>
-      </div>
-    </div>
-
-    <div class="finding">
-      <div class="rail"><span class="fnum">15</span><span class="chip mod">Moderate</span></div>
-      <div>
-        <h3>A second site of yours carries the identical page title</h3>
-        <p>buyershaus.com, which is your investor facing site, uses exactly the same page title as malihaus.com: We Buy Houses, Sell Your Home in Boca Raton, MaliHaus Capital. It is a different audience and a different offer wearing the seller site's title.</p>
-        <div class="fix"><span>What to do</span><p>Give the investor site its own title and description written for buyers, so the two stop competing for the same search and each one is legible for what it is.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SECTION D ================= -->
-  <section>
-    <div class="sec-head">
-      <span class="k">Part four</span>
-      <h2>What you can measure</h2>
-    </div>
-    <p class="sec-sub">This part is short and it is the one that limits everything else, because none of the work above can be judged without it.</p>
-
-    <div class="finding">
-      <div class="rail"><span class="fnum">16</span><span class="chip crit">Critical</span></div>
-      <div>
-        <h3>Nothing on the website is measured</h3>
-        <p>I checked the whole page, both the code it serves and the requests it makes. There is no Google Analytics, no Google Tag Manager, no Meta pixel, no advertising tag of any kind, and no call tracking. The only thing recording anything is your website provider's own page counter.</p>
-        <div class="obs">Practically, this means: <b>you cannot tell how many people visit, where they came from, how many reach a form, how many abandon it, which page produced a lead, or what any lead cost.</b> If you spend money on traffic today, none of it can be attributed.</div>
-        <div class="fix"><span>What to do</span><p>Put proper measurement in before anything else changes, so there is a baseline to compare against. Analytics and tag management, conversion events on every form, call and text, call tracking behind the phone number, and one weekly report that shows visits, leads, calls, cost and source in one place.</p></div>
-      </div>
-    </div>
-
-    <div class="finding">
-      <div class="rail"><span class="fnum">17</span><span class="chip mod">Moderate</span></div>
-      <div>
-        <h3>The page loads a large amount of software it never uses</h3>
-        <p>The site delivers its editing and media management code to ordinary visitors, roughly a hundred scripts in total, including the whole page builder and the administrator toolbar styling. None of it does anything for a seller and all of it has to download first.</p>
-        <p>Speed matters most on the exact traffic you want, which is someone on a phone, on mobile data, in a hurry.</p>
-        <div class="fix"><span>What to do</span><p>Handled by the rebuild in finding 09. A purpose built page loads a fraction of this.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PRIORITY ================= -->
-  <section>
-    <div class="sec-head">
-      <span class="k">Where to start</span>
-      <h2>The first four moves, in order</h2>
-    </div>
-    <p class="sec-sub">Ordered by what returns the most for the least, not by what is most interesting to build.</p>
-
-    <div class="priority">
-      <ol>
-        <li>
-          <div>
-            <h4>Measurement first</h4>
-            <p>Analytics, conversion tracking and call tracking, so everything after this can be judged against a real baseline rather than an opinion. This takes days, not weeks.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h4>Put the reviews on the site and fix the response layer</h4>
-            <p>Your 5.0 rating goes where visitors see it, and a conversation layer starts answering instantly on the site, by text and on missed calls. These two together address the largest share of what is currently being lost.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h4>Rebuild the home page</h4>
-            <p>Your brand, your photographs, your reviews, your multiple exit routes as the leading idea, a short staged form that starts with the address alone, and booking straight into your calendar. This is also what unlocks the findings the current template blocks.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h4>Correct the record on Google, then build the situation pages</h4>
-            <p>One phone number everywhere, a complete profile, the missing secondary categories and a steady flow of new reviews, once we have settled which side of the business the profile represents. Then the situation pages, which are what put you in AI answers and keep working after that.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ================= CLOSING ================= -->
-  <div class="closing">
-    <p class="first">None of this is a criticism of the business. The offer is sound, the reviews say the service is genuinely good, and the multiple exit routes are a real advantage. The gap is entirely between what is true about MaliHaus and what a seller on the website can actually see and do.</p>
-    <p>Everything in this document is something I have verified on your live site, your Google listing or your public pages, on 24 August 2026. Happy to walk through any of it, and to show you what the rebuilt home page would look like before you commit to anything.</p>
-    <div class="sig">
-      <b>Andrew Cherry</b>
-      RequityAI &nbsp;&middot;&nbsp; andrew@requityai.com
+  <div class="signoff">
+    <hr>
+    <div class="name">
+      Andrew Cherry
+      <span>RequityAI</span>
+      <span>andrew@requityai.com</span>
     </div>
   </div>
-
-  <p class="note">Findings are based on the public version of malihaus.com, buyershaus.com and the MaliHaus Capital Google Business Profile as they stood on 24 August 2026. The 5.0 rating and review count are as displayed on the Google listing on that date.</p>
 
 </div>
+
 </body>
 </html>
